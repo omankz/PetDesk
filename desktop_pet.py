@@ -1410,6 +1410,20 @@ class Pet:
         self._set_bubble(text, persist=False)
         self.win.after(2400, lambda: None if self.bubble_persist else self._kill_bubble())
 
+    def _overhead_top(self):
+        """Posisi y (layar) teratas dari pet ATAU prop di atasnya (mis. parasut),
+        supaya balon/teks ditaruh di atas objek tertinggi dan tidak tertutup."""
+        top = self.y
+        if self.prop_win:
+            try:
+                self.prop_win.update_idletasks()
+                pty = self.prop_win.winfo_y()
+                if pty > 0:
+                    top = min(top, float(pty))
+            except tk.TclError:
+                pass
+        return top
+
     def _reposition_bubble(self):
         if not self.bubble:
             return
@@ -1417,7 +1431,7 @@ class Pet:
             self.bubble.update_idletasks()
             bw = self.bubble.winfo_width()
             bx = int(self.x + SPRITE / 2 - bw / 2)
-            by = int(self.y - self.bubble.winfo_height() - 6)
+            by = int(self._overhead_top() - self.bubble.winfo_height() - 6)
             self.bubble.geometry("+%d+%d" % (bx, by))
         except tk.TclError:
             self.bubble = self.bubble_label = None
@@ -1465,7 +1479,7 @@ class Pet:
             self.mq_win.update_idletasks()
             mw = self.mq_win.winfo_width()
             bx = int(self.x + SPRITE / 2 - mw / 2)
-            by = int(self.y - self.mq_win.winfo_height() - 6)
+            by = int(self._overhead_top() - self.mq_win.winfo_height() - 6)
             self.mq_win.geometry("+%d+%d" % (bx, by))
         except tk.TclError:
             self.mq_win = self.mq_label = None
