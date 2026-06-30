@@ -14,6 +14,11 @@ ngobrol lewat LLM (OpenAI-compatible) maupun bot Telegram.
 
 ---
 
+
+
+https://github.com/user-attachments/assets/c1a2ccea-e2f5-4e7c-853a-d90658c3dde4
+
+
 ## ✨ Fitur
 
 - 🐾 **Pet pixel-art** transparan, selalu di atas window lain, di-generate acak (bentuk, telinga, warna).
