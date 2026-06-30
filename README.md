@@ -10,6 +10,12 @@ ngobrol lewat LLM (OpenAI-compatible) maupun bot Telegram.
 
 </div>
 
+
+
+https://github.com/user-attachments/assets/6e73b634-034f-4dc1-9878-9c4f826cd6da
+
+
+
 ---
 
 ## ✨ Fitur
