@@ -1,0 +1,21 @@
+# ===== Privasi: JANGAN publikasikan setelan pribadi =====
+# Berisi bot token Telegram, API key, dll. Dibuat otomatis oleh aplikasi.
+pet_config.json
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ===== Editor / OS / tooling =====
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# ===== Shortcut & file lokal =====
+*.lnk
