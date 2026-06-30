@@ -1,6 +1,3 @@
-# PetDesk
-PetDesk adalah AI personal assistant interaktif yang berjalan secara lokal di desktop dan terhubung dengan LLM anda ke Telegram
-
 <div align="center">
 
 <img src="assets/icon.png" width="120" alt="PetDesk icon" />
