@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/icon.png" width="120" alt="PetDesk icon" />
+
 # PetDesk 🐾
 
 **Pet virtual pixel-art yang hidup di desktop Windows kamu.**
